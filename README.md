@@ -1,5 +1,9 @@
 # Lair Control - Home Assistant Integration for Foundry VTT
 
+Fork of Lair Control to add support for foundrybourne specific features:
+
+- Sending spotlight specific turn changes
+
 Lair Control brings your tabletop experience into the real world by integrating Foundry VTT with Home Assistant. Automate your smart lights, sounds, and effects directly from your game events.
 
 ## Features
