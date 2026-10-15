@@ -1,0 +1,18 @@
+<form class="flexcol" autocomplete="off">
+    <p class="notes">Choose the Home Assistant light in front of each player character. When that character has the spotlight, the light turns on. Leave blank to skip a character.</p>
+    {{#each seats}}
+    <div class="form-group">
+        <label>{{name}}</label>
+        <div class="form-fields">
+            <input type="text" name="seat-{{id}}" value="{{entity}}" list="lair-seat-entities" placeholder="light.wled_segment_1">
+        </div>
+    </div>
+    {{/each}}
+    {{#unless seats.length}}
+    <p class="notes">No player-owned characters found. Assign owners to your character actors first.</p>
+    {{/unless}}
+    <datalist id="lair-seat-entities">{{{entityOptions}}}</datalist>
+    <footer class="sheet-footer flexrow">
+        <button type="submit"><i class="fas fa-save"></i> Save</button>
+    </footer>
+</form>
