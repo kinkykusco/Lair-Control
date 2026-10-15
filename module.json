@@ -2,7 +2,7 @@
   "id": "foundry-ha-integration",
   "title": "Lair Control DH",
   "description": "Integrates Foundry VTT with Home Assistant for immersive lighting and effects, with Daggerheart specific support",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "author": "kinkykusco",
   "compatibility": {
     "minimum": "11",
