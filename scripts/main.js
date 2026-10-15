@@ -1,5 +1,6 @@
 import { HomeAssistantClient } from './api.js';
 import { AutomationSettingsForm } from './automation-settings.js';
+import { registerSpotlightSettings, initSpotlight } from './spotlight.js';
 
 let haClient;
 
@@ -93,6 +94,8 @@ Hooks.once('init', () => {
     });
 
     haClient = new HomeAssistantClient();
+    registerSpotlightSettings();
+    initSpotlight(haClient);
 });
 
 // Replaced data-based injection with DOM-based injection (V13 Safe)
